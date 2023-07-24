@@ -1,10 +1,12 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:medico/theme/palette.dart';
 
 import '../../../utils/textfield.dart';
 
 class SignUp extends StatelessWidget {
-  static route = 
+  static route() => MaterialPageRoute(builder: (context) => SignUp());
   SignUp({super.key});
   final con = TextEditingController();
   final con1 = TextEditingController();
@@ -14,7 +16,7 @@ class SignUp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: SizedBox(height: 50, child: Image.network(Photos.title)),
+        title: SizedBox(height: 40,width: 40, child: Image.network(Photos.title)),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -50,7 +52,7 @@ class SignUp extends StatelessWidget {
           ),
           CustomTextField(
               hintText: "Email",
-              icon: Icons.people,
+              icon: Icons.email,
               keyboardType: TextInputType.text,
               onChanged: (value) {},
               con: con),
@@ -64,14 +66,19 @@ class SignUp extends StatelessWidget {
               keyboardType: TextInputType.text,
               onChanged: (value) {},
               con: con1),
-              CustomTextField(
+              const SizedBox(
+            height: 15,
+          ),
+          CustomTextField(
               obscureText: true,
               hintText: "Confirm Password",
               icon: Icons.password,
               keyboardType: TextInputType.text,
               onChanged: (value) {},
               con: con1),
-          
+              const SizedBox(
+            height: 15,
+          ),
           Container(
             padding: const EdgeInsets.only(right: 10, left: 10),
             child: IconButton(
