@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medico/features/auth/home_screens/home_screen.dart';
+import 'package:medico/features/auth/home_screens/MainScreen.dart';
 import 'package:medico/features/auth/screens/signUp.dart';
 import 'package:medico/utils/textfield.dart';
 
@@ -101,7 +102,7 @@ class LoginScreen extends StatelessWidget {
             padding: const EdgeInsets.only(right: 10, left: 10),
             child: IconButton(
               onPressed: () {
-                Navigator.pushReplacement(context, HomeScreen.route());
+                Navigator.pushReplacement(context, mainScreen.route());
               },
               icon: Container(
                 height: 45,
