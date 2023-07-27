@@ -20,7 +20,7 @@ class Catwid extends StatelessWidget {
       child: Stack(
         children: [
           SizedBox(
-              // height: 300,
+              
               width: MediaQuery.of(context).size.width,
               child: CachedNetworkImage(imageUrl: image,placeholder: (context,url)=>SizedBox(
                 height: 100,

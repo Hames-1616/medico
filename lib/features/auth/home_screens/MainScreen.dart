@@ -7,7 +7,7 @@ import 'package:medico/features/auth/home_screens/Profile.dart';
 import 'package:medico/features/auth/home_screens/Appointments.dart';
 import 'package:medico/features/auth/home_screens/home_screen.dart';
 import 'package:medico/features/auth/home_screens/Healthcare.dart';
-import 'package:medico/features/auth/home_screens/Categories.dart';
+import 'package:medico/features/category/viewScreens/Categories.dart';
 
 
 
