@@ -1,5 +1,8 @@
 import 'package:blur/blur.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+
+import '../theme/palette.dart';
 
 class Catwid extends StatelessWidget {
   final String image;
@@ -8,20 +11,30 @@ class Catwid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        SizedBox(
-            height: 270,
-            width: MediaQuery.of(context).size.width,
-            child: Image.network(image).blurred(blur: 1.5)),
-        Container(
-          padding: const EdgeInsets.all(25),
-          child:  Text(
-            message,
-            style: const TextStyle(fontFamily: "Poppins", fontSize: 20,fontWeight: FontWeight.bold),
-          ),
-        )
-      ],
+    return InkWell(
+      onTap: (){
+        
+      },
+      highlightColor: Colors.transparent,
+  splashColor: Colors.transparent,
+      child: Stack(
+        children: [
+          SizedBox(
+              // height: 300,
+              width: MediaQuery.of(context).size.width,
+              child: CachedNetworkImage(imageUrl: image,placeholder: (context,url)=>SizedBox(
+                height: 100,
+                width: 100,
+                child: Image.network(Photos.title)),).blurred(blur: 1.3)),
+          Container(
+            padding: const EdgeInsets.all(25),
+            child:  Text(
+              message,
+              style: const TextStyle(fontFamily: "Poppins", fontSize: 22,fontWeight: FontWeight.w600),
+            ),
+          )
+        ],
+      ),
     );
   }
 }

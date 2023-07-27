@@ -1,5 +1,5 @@
+
 import 'package:flutter/material.dart';
-import 'package:blur/blur.dart';
 import 'package:medico/utils/category_menu.dart';
 class two extends StatelessWidget {
   const two({super.key});
@@ -15,10 +15,13 @@ class two extends StatelessWidget {
           margin:  const EdgeInsets.only(right: 20,left: 20),
           child: const Column(
             children: [
-              Catwid(image: "https://t4.ftcdn.net/jpg/04/38/66/37/240_F_438663747_MjwVzDfUgsMMrKJ9KilPFVZ9hJAA1bFD.jpg", message: "Vitamins",),
-               Catwid(image: "https://t3.ftcdn.net/jpg/00/88/69/90/240_F_88699020_zWoH3djosXrlS5oGLy7eOSqOIGyVguOV.jpg",message: "Diabetes Devices",),
-               Catwid(image: "https://t3.ftcdn.net/jpg/01/34/39/58/240_F_134395874_7A55o6neh8kUW4DROLSNreIsj93rC8TA.jpg",message: "Aryuveda Products",),
-               Catwid(image: "https://t4.ftcdn.net/jpg/02/72/49/51/240_F_272495123_2D9w1k3FwuWsloK4FJSZfVBVQZvTtWFl.jpg",message: "HomeoPathy",),
+              Catwid(image: "https://images.unsplash.com/photo-1544829885-9a58b457fd5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHZpdGFtaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60", message: "Vitamins",),
+              SizedBox(height: 20,),
+               Catwid(image: "https://media.istockphoto.com/id/1184019335/photo/measuring-blood-sugar.jpg?s=612x612&w=0&k=20&c=Q4ytB6wMpaPqodqr8P_ynVC-qcXx-uXOZj8ZtSnN6YM=",message: "Diabetes Devices",),
+               SizedBox(height: 20,),
+               Catwid(image: "https://images.unsplash.com/photo-1492552181161-62217fc3076d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGF5dXJ2ZWRhfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",message: "Aryuveda Products",),
+               SizedBox(height: 20,),
+               Catwid(image: "https://media.istockphoto.com/id/466628811/photo/alternative-medicine.jpg?s=612x612&w=0&k=20&c=xGUFtYeRC8SuOPLkt9XxmKN85RlMkqDy7toQJWt1YEM=",message: "HomeoPathy",),
             ],
           ),
         ),
