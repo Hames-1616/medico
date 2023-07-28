@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
   CustomTextField({
-    this.q=false,
+    this.q = false,
     this.c = "",
     this.p = "",
     this.a = 20,
@@ -27,9 +27,13 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20.0, right: 20.0,),
+      padding: const EdgeInsets.only(
+        left: 20.0,
+        right: 20.0,
+      ),
       child: TextFormField(
         validator: (value) {
+
         },
         autofocus: q,
         controller: con,
@@ -47,7 +51,7 @@ class CustomTextField extends StatelessWidget {
           contentPadding: const EdgeInsets.all(18.0),
           filled: true,
           fillColor: Colors.grey.shade300,
-          prefixIcon: Icon( 
+          prefixIcon: Icon(
             icon,
             size: 24.0,
             color: Colors.black54,

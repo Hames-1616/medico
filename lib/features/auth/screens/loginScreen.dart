@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:medico/features/auth/home_screens/home_screen.dart';
 import 'package:medico/features/auth/home_screens/MainScreen.dart';
 import 'package:medico/features/auth/screens/signUp.dart';
 import 'package:medico/utils/textfield.dart';

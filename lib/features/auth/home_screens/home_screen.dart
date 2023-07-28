@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+import 'package:medico/utils/dimentions.dart';
 
 class HomeScreen extends StatefulWidget {
   static route() => MaterialPageRoute(builder: (context) => const HomeScreen());
@@ -258,7 +259,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 isLoop: true,
                 indicatorColor: Colors.black54,
                 indicatorBackgroundColor: Colors.grey,
-                height: 180,
+                height: MediaQuery.of(context).size.height/hei(context, 180),
                 autoPlayInterval: 3000,
                 width: double.infinity,
                 children: [
