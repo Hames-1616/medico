@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:medico/features/category/viewScreens/CurrentProduct.dart';
 import 'package:medico/utils/dimentions.dart';
 
 class ListProduct extends StatelessWidget {
@@ -11,7 +12,9 @@ class ListProduct extends StatelessWidget {
     return InkWell(
       highlightColor: Colors.transparent,
   splashColor: Colors.transparent,
-  onTap: (){},
+  onTap: (){
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>const CurrentProduct()));
+  },
   child: Container(
     padding:const  EdgeInsets.only(right: 40,left: 45,top: 20,bottom: 20),
     child: Row(
